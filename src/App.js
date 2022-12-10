@@ -1,23 +1,25 @@
-import logo from './logo.svg';
 import './App.css';
+import Hello from './components/Hello';
+import Goodmorning from './components/Goodmorning';
+import Heading from './components/Heading';
+
+const box = {
+    backgroundColor: 'black',
+    color:'white',
+    border: '10px solid #ccc',
+    width: '500px',
+    display:'grid',
+
+}
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-           namaste javascipt<code> and</code> Hello world.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Heading />
+      <div className="box" style={box}>
+        <Hello />
+        <Goodmorning />
+      </div>
     </div>
   );
 }
