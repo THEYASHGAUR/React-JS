@@ -1,14 +1,25 @@
-import React from 'react';
-import ReactDOM from 'react-dom/client';
-import './index.css';
-import reportWebVitals from './reportWebVitals';
-import App from './App';
+import React from "react";
+import ReactDOM from "react-dom";
+
+function Card() {
+    <div className="cards">
+        <div className="card">
+            <img src="images/robot.png" alt="" className="card_img" />
+            <div className="card_info">
+                <span className="card_category">A netflix orignal series</span>
+                <h3 className="card_title">dark knight</h3>
+                <a href="https://www.google.com" target="_blank">
+                    <button>Watch Now</button>
+                </a>
+            </div>
+        </div>
+    </div>
+}
 
 
-const root = ReactDOM.createRoot(document.getElementById('root'));
-root.render(<App />);
-
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();
+ReactDOM.render(
+    <>
+        <Card />
+    </>,
+    document.getElementById('root')
+);
